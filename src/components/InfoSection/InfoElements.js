@@ -31,8 +31,9 @@ export const Column = styled.div`
 `
 
 export const TextWrapper = styled.div`
-    max-width: 540px;
+    display: grid;
     padding-top: 0;
+    align-items: center;
 `
 
 export const TopLine = styled.p`
