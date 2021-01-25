@@ -2,7 +2,7 @@ import React from 'react'
 import { Button } from '../ButtonElements';
 import img from '../../images/svg-1.svg';
 
-import { InfoContainer, InfoWrapper, InfoRow, Column,
+import { InfoContainer, InfoWrapper, Column,
 TextWrapper, TopLine, Heading, Subtitle, BtnWrap,
 ImgWrap, Img} from './InfoElements';
 
@@ -11,7 +11,11 @@ const InfoSection = ({ lightBg, lightText, id, topLine, headline, darkText, desc
         <>
             <InfoContainer lightBg={lightBg} id={id}>
                 <InfoWrapper>
-                    <InfoRow>
+                        <Column>
+                            <ImgWrap>
+                                <Img src={img} alt={alt} width="100%" margin="0 0 10px 0" padding-right={0}/>
+                            </ImgWrap>
+                        </Column>
                         <Column>
                         <TextWrapper>
                             <TopLine>{topLine}</TopLine>
@@ -31,12 +35,6 @@ const InfoSection = ({ lightBg, lightText, id, topLine, headline, darkText, desc
                             </BtnWrap>
                         </TextWrapper>
                         </Column>
-                        <Column>
-                            <ImgWrap>
-                                <Img src={img} alt={alt} width="100%" margin="0 0 10px 0" padding-right={0}/>
-                            </ImgWrap>
-                        </Column>
-                    </InfoRow>
                 </InfoWrapper>
             </InfoContainer>
         </>

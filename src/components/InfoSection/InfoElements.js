@@ -3,36 +3,30 @@ import styled from 'styled-components';
 
 export const InfoContainer = styled.div`
     color: #fff;
-    padding: 0 56px;
     background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
 `
 
 export const InfoWrapper = styled.div`
+    margin: 0 auto;
     display: grid;
-    z-index: 1;
-    height: 500px;
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 24px 24px;
-    justify-content: center;
-`
-
-export const InfoRow = styled.div`
-    display: grid;
-    align-items: center;
     grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-gap: 16px;
+    position: absloute;
+    padding: 40px 20px;
 
-    @media screen and (max-widht: 786px) {
+    @media screen and (max-width: 786px) {
         grid-template-columns: 1fr;
     }
 `
+
 
 export const Column = styled.div`
     margin-bottom: 15px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    align-items: center;
 `
 
 export const TextWrapper = styled.div`
@@ -82,7 +76,11 @@ export const ImgWrap = styled.div`
 `
 
 export const Img = styled.img`
-    max-widht: 100%;
+    widht: 100%;
     margin: 0 0 10px 0;
     padding-right: 0;
+
+    @media screen and (max-width: 786px) {
+        width: 300px;
+    }
 `

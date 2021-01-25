@@ -5,33 +5,21 @@ export const ContactContainer = styled.div`
     background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
 
     @media screen and (max-width: 768px) {
-        padding: 200px 0 0 0;
+        padding-top: 20px;
     }
 `
 
 export const ContactWrapper = styled.div`
+    margin: 0 auto;
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-gap: 16px;
+    position: absloute;
     z-index: 1;
-    height: 600px;
-    width: 100%;
-    max-width: 1100px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0 24px;
-    justify-content: center;
+    padding: 40px 20px;
 
     @media screen and (max-width: 786px) {
-        height: 400px;
-    }
-`
-
-export const ContactRow = styled.div`
-    display: grid;
-    grid-auto-columns: minmax(auto,1fr);
-    align-items: center;
-    grid-template-columns: 1fr 1fr;
-
-    @media screen and (max-widht: 786px) {
         grid-template-columns: 1fr;
     }
 `
@@ -49,6 +37,6 @@ export const ContactSub = styled.a`
     }
 
     &:hover {
-        color: #8A2387
+        color: #8A2387;
     }
 `

@@ -1,7 +1,7 @@
 import React from 'react'
 import { FaBehance, FaGithub, FaInstagram, FaLinkedin, FaMailBulk, FaWhatsapp } from 'react-icons/fa';
 import { Column, Heading, Img, ImgWrap, TextWrapper, TopLine } from '../InfoSection/InfoElements'
-import { ContactContainer, ContactRow, ContactWrapper, ContactSub } from './ContactElements'
+import { ContactContainer, ContactWrapper, ContactSub } from './ContactElements'
 import { SocialIconLink, SocialIcons } from '../Footer/FooterElements';
 import img from '../../images/svg-4.svg';
 
@@ -10,7 +10,11 @@ const Contact = ({ top, email, number, id, headline, lightText, darkText }) => {
         <>
             <ContactContainer id={id}>
                 <ContactWrapper>
-                    <ContactRow>
+                        <Column>
+                            <ImgWrap>
+                                <Img src={img} width="100%" margin="0 0 10px 0" padding-right={0}/>
+                            </ImgWrap>
+                        </Column>
                         <Column>
                             <TextWrapper>
                                 <TopLine>{top}</TopLine>
@@ -34,12 +38,6 @@ const Contact = ({ top, email, number, id, headline, lightText, darkText }) => {
                                 </SocialIcons>
                             </TextWrapper>
                         </Column>
-                        <Column>
-                            <ImgWrap>
-                                <Img src={img} width="100%" margin="0 0 10px 0" padding-right={0}/>
-                            </ImgWrap>
-                        </Column>
-                    </ContactRow>
                 </ContactWrapper>
             </ContactContainer>
         </>

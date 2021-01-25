@@ -29,7 +29,7 @@ export const ProjectWrap = styled.div`
     flex-direction: column;
     justify-content: flex-start;
     align-items: left;
-    padding-right: 20px;
+    padding: 40px 20px;
 
     @media screen and (max-width: 786px) {
         margin-bottom: 12px;
