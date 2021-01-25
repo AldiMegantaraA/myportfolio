@@ -7,7 +7,6 @@ export const homeObjOne = {
     headline: 'Enthusiast Digital Product',
     description: 'Addaptive and enthuastic shifting from Ocean Engineering to Digital scope. I recently began as Front-End Developer and UI/UX Designer and Researcher. I gained experience by working on side project.',
     buttonLabel: 'More about me',
-    imgStart: false,
     img: require('../../images/svg-1.svg'),
     alt: 'me',
     dark: true,

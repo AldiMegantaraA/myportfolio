@@ -14,31 +14,25 @@ export const InfoWrapper = styled.div`
     width: 100%;
     margin-right: auto;
     margin-left: auto;
-    padding: 0 24px;
+    padding: 24px 24px;
     justify-content: center;
 `
 
 export const InfoRow = styled.div`
     display: grid;
-    grid-auto-columns: minmax(auto,1fr);
     align-items: center;
-    grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col 1'` : `'col1 col2'`)};
+    grid-template-columns: 1fr 1fr;
 
-    @media screen and (max-widht: 768px) {
-        grid-template-areas: ${({imgStart}) => (imgStart ? `'col1 col 2'` : `'col1 col1' 'col2 col2'`)};
+    @media screen and (max-widht: 786px) {
+        grid-template-columns: 1fr;
     }
 `
 
-export const Column1 = styled.div`
+export const Column = styled.div`
     margin-bottom: 15px;
-    padding: 0 15px;
-    grid-area: col1;
-`
-
-export const Column2 = styled.div`
-    margin-bottom: 15px;
-    padding: 0 15px;
-    grid-area: col2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 `
 
 export const TextWrapper = styled.div`

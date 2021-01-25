@@ -15,12 +15,12 @@ const Sidebar = ({isOpen, toggle}) => {
                     <SidebarLink to="portfolio" onClick={toggle}>
                         Portfolio
                     </SidebarLink>
-                    <SidebarLink to="services" onClick={toggle}>
+                    <SidebarLink to="skill" onClick={toggle}>
                         Services
                     </SidebarLink>
                 </SidebarMenu>
                 <SideBtnWrap>
-                    <SidebarRoute to="/contact" onClick={toggle}>Contact</SidebarRoute>
+                    <SidebarRoute to="contact" onClick={toggle}>Contact</SidebarRoute>
                 </SideBtnWrap>
             </SidebarWrapper>
         </SidebarContainer>

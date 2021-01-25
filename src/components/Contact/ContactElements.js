@@ -27,12 +27,12 @@ export const ContactWrapper = styled.div`
 
 export const ContactRow = styled.div`
     display: grid;
-    grid-auto-columns: minmax(auto, 1fr);
+    grid-auto-columns: minmax(auto,1fr);
     align-items: center;
-    grid-template-areas: ${({imgStart}) => (imgStart ? `'col2 col 1'` : `'col1 col2'`)};
+    grid-template-columns: 1fr 1fr;
 
-    @media screen and (max-widht: 768px) {
-        grid-template-areas: ${({imgStart}) => (imgStart ? `'col1 col 2'` : `'col1 col1' 'col2 col2'`)};
+    @media screen and (max-widht: 786px) {
+        grid-template-columns: 1fr;
     }
 `
 
