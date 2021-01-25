@@ -25,7 +25,7 @@ export const ContactWrapper = styled.div`
 `
 
 export const ContactSub = styled.a`
-    max-width: 240px;
+    max-width: 340px;
     margin-bottom: 8px;
     text-decoration: none;
     font-size: 18px;

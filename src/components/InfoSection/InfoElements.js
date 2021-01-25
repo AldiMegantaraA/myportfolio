@@ -4,6 +4,7 @@ import styled from 'styled-components';
 export const InfoContainer = styled.div`
     color: #fff;
     background: ${({lightBg}) => (lightBg ? '#f9f9f9' : '#010606')};
+    padding-top: 40px;
 `
 
 export const InfoWrapper = styled.div`
@@ -13,7 +14,7 @@ export const InfoWrapper = styled.div`
     align-items: center;
     grid-gap: 16px;
     position: absloute;
-    padding: 40px 20px;
+    padding: 40px 40px;
 
     @media screen and (max-width: 786px) {
         grid-template-columns: 1fr;
@@ -48,6 +49,7 @@ export const Heading = styled.h1`
     margin-bottom: 24px;
     line-height: 1.1;
     font-weight: 600;
+    max-width: 300px
     color: ${({lightText}) => (lightText ? '#f7f8fa' : '#010606')};
 `
 
@@ -60,7 +62,7 @@ export const Subtitle = styled.p`
 
     @media screen and (max-width: 786px) {
         font-size: 14px;
-        width: 500px;
+        max-width: 300px;
     }
 `
 
@@ -71,12 +73,12 @@ export const BtnWrap = styled.div`
 `
 
 export const ImgWrap = styled.div`
-    max-width: 555px;
+    max-width: 400px;
     height: 100%
 `
 
 export const Img = styled.img`
-    widht: 100%;
+    widht: 80%;
     margin: 0 0 10px 0;
     padding-right: 0;
 
