@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import Video from '../../videos/video1.mp4';
+import React from 'react';
+import Video from '../../images/bpr.gif';
 import { HeroContainer, HeroBg, VideoBg, ProjectTitle, ProjectP, ProjectWrap, SectionTitle } from './IntidanaElements';
 
 
@@ -20,7 +20,7 @@ const Intidana = ({id}) => {
                 </ProjectP>
             </ProjectWrap>
                 <HeroBg>
-                    <VideoBg autoPlay loop muted src={Video} type='video/mp4'/>
+                    <VideoBg src={Video} />
                 </HeroBg>
         </HeroContainer>
     )

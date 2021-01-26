@@ -1,12 +1,11 @@
 import React from 'react';
 import { FaBehance, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
-import Video from '../../videos/video.mp4';
 import { FooterContainer, FooterWrap, SocialMedia,
 SocialMediaWrap, SocialIcons, SocialLogo, SocialIconLink, WebsiteRights } from './FooterElements';
 
 const Footer = () => {
     return (
-        <FooterContainer autoPlay loop muted src={Video} type='video/mp4'>
+        <FooterContainer>
             <FooterWrap>
                     <SocialMedia>
                         <SocialMediaWrap>
