@@ -28,12 +28,10 @@ const Portfolio = () => {
                         Company Profile Website for PT. Sahasra Anugrah Abadi</PortfolioP>
                     </PortfolioCard>
                     <PortfolioCard>
-                       <a target='_blank' href='https://fpsindonesia.com/'>
                         <PortfolioIcon src={Project3}/>
                         <PortfolioH2>Famous Pasific Shipping</PortfolioH2>
                         <PortfolioP>Redesign UI/UX and Rebuild
                         Company Profile Website for FPS Indonesia</PortfolioP>
-                       </a>
                     </PortfolioCard>
                 </PortfolioWrapper>
             </PortfolioContainer>
